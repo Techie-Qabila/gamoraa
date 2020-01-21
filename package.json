@@ -1,10 +1,13 @@
 {
   "name": "gamoraa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplest framework for building GRPC services",
   "main": "dist/src/server.js",
   "types": "dist/src/server.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "format": "prettier --write 'src/**/*.ts'",
