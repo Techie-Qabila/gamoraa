@@ -1,0 +1,43 @@
+{
+  "name": "gamoraa",
+  "version": "1.0.0",
+  "description": "Simplest framework for building GRPC services",
+  "main": "dist/src/server.js",
+  "types": "dist/src/server.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write 'src/**/*.ts'",
+    "prepublishOnly": "tsc",
+    "start-helloword": "npm run build && node dist/examples/greeter-server.js",
+    "route-guide-server": "npm run build && node dist/examples/route-guide-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Techie-Qabila/gamoraa.git"
+  },
+  "keywords": [
+    "GRPC",
+    "rpc",
+    "proto",
+    "api",
+    "service"
+  ],
+  "author": "Muhammad Ahmed <mahmed8003@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.3",
+    "avvio": "^6.3.0",
+    "google-protobuf": "^3.11.2",
+    "grpc": "^1.24.2",
+    "grpc-boom": "^1.0.26",
+    "pino": "^5.16.0",
+    "pino-pretty": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "@types/pino": "^5.15.3",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  }
+}
